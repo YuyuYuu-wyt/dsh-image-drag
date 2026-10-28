@@ -4,7 +4,7 @@
 
 ## 新功能
 
-- **Ctrl + 鼠标左键拖动平移（重点）**：图片 / PDF / Office→PDF 预览放大后，按住 Ctrl 拖动即可平移；直接驱动预览自身滚动，与「适应宽度」「25%–400% 固定缩放」「Ctrl + 滚轮缩放」兼容。
+- **Ctrl + 鼠标左键拖动平移**：图片 / PDF / Office→PDF 预览放大后，按住 Ctrl 拖动即可平移；直接驱动预览自身滚动，与「适应宽度」「25%–400% 固定缩放」「Ctrl + 滚轮缩放」兼容。
 - **每个分栏的小关闭按钮**：单栏时提示「关闭全部」，双栏时左右各一个、提示「关闭本栏」；点击只清空本栏并留在本栏「开始」页，另一栏、分栏布局和侧边栏都保持不变。
 
 ## 安装
@@ -44,7 +44,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Profile deskt
 
 First public release: focused on **image dragging** in the DeepSeek Harness right sidebar, with one close button per pane; no native behaviour is changed.
 
-- **Ctrl + left-drag panning (main feature)** for zoomed image / PDF / Office→PDF previews; it drives the preview's own scroll position and composes with fit-width, fixed 25%–400% zoom and Ctrl+wheel zoom.
+- **Ctrl + left-drag panning** for zoomed image / PDF / Office→PDF previews; it drives the preview's own scroll position and composes with fit-width, fixed 25%–400% zoom and Ctrl+wheel zoom.
 - **One close button per pane**: "close all" on a single pane, "close this pane" on each side of a split sidebar. A click clears only that pane back to its Start page; the other pane, the split layout and the sidebar stay unchanged.
 
 Install with `dsh plugin --profile desktop add "github:YuyuYuu-wyt/dsh-image-drag"`, or clone and run `install.ps1`. Refresh the DSH page (Ctrl+R) afterwards; restart DeepSeek Harness if the plugin still does not appear.

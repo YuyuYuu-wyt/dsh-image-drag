@@ -4,7 +4,7 @@ English | [中文](README.md)
 
 A small add-on for the DeepSeek Harness (DSH) right sidebar, focused on **image dragging** without taking over the native UI:
 
-- **Ctrl + left-button drag (main feature)**: pan zoomed image / PDF previews (including Word/PPT converted to PDF).
+- **Ctrl + left-button drag**: pan zoomed image / PDF previews (including Word/PPT converted to PDF).
 - **One close button per pane**: with a split sidebar each pane gets its own button; a click clears only that pane and leaves it on its Start page.
 
 | View | Effect |
