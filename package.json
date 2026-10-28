@@ -1,0 +1,69 @@
+{
+  "name": "dsh-right-sidebar-toolkit",
+  "version": "0.1.0",
+  "description": "Image Drag: Ctrl+left-drag panning for right-sidebar image/PDF previews; each pane also has its own small close button.",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "./icon.svg",
+  "license": "MIT",
+  "author": "wyt",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuyuYuu-wyt/dsh-image-drag.git"
+  },
+  "homepage": "https://github.com/YuyuYuu-wyt/dsh-image-drag#readme",
+  "bugs": {
+    "url": "https://github.com/YuyuYuu-wyt/dsh-image-drag/issues"
+  },
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "image-drag",
+    "drag",
+    "pan",
+    "sidebar",
+    "right-sidebar",
+    "preview",
+    "zoom",
+    "图片拖动"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "docs",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "install.ps1",
+    "LICENSE"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "check": "node --check lib/index.js && node --check lib/client.js"
+  }
+}

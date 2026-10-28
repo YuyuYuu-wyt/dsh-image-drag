@@ -1,0 +1,15 @@
+# Development-only material (not published)
+_dev/
+_verify/
+_fixtures/
+_github-review/
+
+# Node / packaging noise
+node_modules/
+*.tgz
+*.log
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini

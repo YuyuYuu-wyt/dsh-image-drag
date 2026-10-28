@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Image Drag",
+    "description": "Ctrl+drag pans image and PDF previews in the right sidebar; each pane also has its own small close button."
+  }
+}
