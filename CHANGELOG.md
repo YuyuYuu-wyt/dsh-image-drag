@@ -8,6 +8,5 @@
 - **每个分栏的小关闭按钮**：单栏提示「关闭全部」，双栏左右各一个、提示「关闭本栏」；点击只清空本栏并留在本栏「开始」页，另一栏、分栏布局和侧边栏保持不变。
 - 纯浏览器侧 DSH 插件：无 Host 行为、无网络请求、无额外权限、无持久化状态。
 - 独立验收 15/15 项 PASS（含不装插件的 baseline 对照），0 console error / warning。
-- 公开说明：本项目为 **AI 辅助编程**（AI-assisted programming），详见 README 文末「AI 辅助编程」一节。
 
 English: see [RELEASE_NOTES.md](RELEASE_NOTES.md#v010--image-drag-english).
