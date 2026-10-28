@@ -2,6 +2,8 @@
 
 [English](README.en.md) | 中文
 
+> 开发方式：**AI 辅助编程**（AI-assisted programming），说明见文末。
+
 一个给 DeepSeek Harness（DSH）右侧边栏用的小插件，重点是**图片拖动**，不接管原生 UI：
 
 - **Ctrl + 鼠标左键拖动（重点）**：平移放大的图片 / PDF 预览（含 Word/PPT 转 PDF）。
@@ -86,6 +88,12 @@ dsh plugin --profile desktop remove dsh-right-sidebar-toolkit
 ## 验证
 
 独立验收（headless 浏览器 + 真实 CDP 鼠标事件驱动 DSH Web 实例，含「不装插件」的 baseline 对照）：**15/15 项 PASS**，覆盖双栏各自关闭、图片/PDF 平移、原生缩放不受影响、拖动后立即点击、无控制台错误；baseline 下原生 Ctrl+拖拽不平移，确认行为由本插件提供。
+
+## AI 辅助编程（AI-assisted development）
+
+本项目的代码（`lib/`）、文档、安装脚本与验收脚本均在 **AI 编程助手**（运行于 DeepSeek Harness 的 AI agent，即 AI-assisted programming）辅助下完成；需求定义、设计取舍、验收标准与发布决定由作者负责。
+
+插件为纯浏览器侧代码：无 Host 行为、无网络请求、无持久化存储；使用前请自行审阅代码与权限范围。
 
 ## License
 

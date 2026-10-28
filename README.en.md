@@ -2,6 +2,8 @@
 
 English | [中文](README.md)
 
+> Development: **AI-assisted programming**; see "AI-assisted development" at the end.
+
 A small add-on for the DeepSeek Harness (DSH) right sidebar, focused on **image dragging** without taking over the native UI:
 
 - **Ctrl + left-button drag (main feature)**: pan zoomed image / PDF previews (including Word/PPT converted to PDF).
@@ -86,6 +88,12 @@ A browser-side-only DSH plugin. No shipped package is modified and there is no h
 ## Verification
 
 Independent acceptance (headless browser, real CDP mouse events driving a DSH web instance, with a no-plugin baseline profile): **15/15 criteria PASS**, covering per-pane closing in split mode, image/PDF panning, untouched native zoom, click-right-after-pan and a clean console. In the baseline, native Ctrl+drag pans nothing, confirming the behaviour comes from this plugin.
+
+## AI-assisted development
+
+The code in `lib/`, the documentation, the install script and the acceptance harness were produced with the help of an **AI coding assistant** (an AI agent running in DeepSeek Harness, i.e. AI-assisted programming). Requirements, design trade-offs, acceptance criteria and the release decision were made by the author.
+
+The plugin is browser-side only: no host behaviour, no network requests and no persisted state. Review the code and its permission surface before use.
 
 ## License
 

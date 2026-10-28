@@ -1,0 +1,28 @@
+name: Sync release notes
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - RELEASE_NOTES.md
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update latest release body
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          latest="$(gh release view --json tagName -q .tagName 2>/dev/null || true)"
+          if [ -z "$latest" ]; then
+            echo "No release exists yet; nothing to sync."
+            exit 0
+          fi
+          gh release edit "$latest" --notes-file RELEASE_NOTES.md
+          echo "Updated release notes for $latest."

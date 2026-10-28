@@ -32,6 +32,10 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Profile deskt
 
 独立验收（headless 浏览器 + 真实 CDP 鼠标事件，含不装插件的 baseline 对照）：15/15 项 PASS，0 console error / warning。
 
+## 开发方式
+
+本项目为 **AI 辅助编程**（AI-assisted programming）：代码、文档与验收脚本在 AI 编程助手（运行于 DeepSeek Harness 的 AI agent）辅助下完成；需求、设计取舍、验收与发布决定由作者负责。
+
 ## 已知边界
 
 - HTML 预览（沙箱 iframe）与文本 / 代码 / Markdown 预览不支持拖动。
@@ -50,3 +54,7 @@ First public release: focused on **image dragging** in the DeepSeek Harness righ
 Install with `dsh plugin --profile desktop add "github:YuyuYuu-wyt/dsh-image-drag"`, or clone and run `install.ps1`. Refresh the DSH page (Ctrl+R) afterwards; restart DeepSeek Harness if the plugin still does not appear.
 
 Verified on DSH `0.2.1-rc.2` (Windows desktop and web). Independent acceptance: 15/15 criteria PASS with a no-plugin baseline control and a clean console.
+
+## AI-assisted development
+
+This project is **AI-assisted programming**: the code, documentation and acceptance harness were produced with the help of an AI coding assistant (an AI agent running in DeepSeek Harness); requirements, design trade-offs, acceptance and the release decision were made by the author.
