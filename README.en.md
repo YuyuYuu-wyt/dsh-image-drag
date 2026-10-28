@@ -64,7 +64,7 @@ Refresh the DSH page (`Ctrl+R`) after installing; if the plugin still does not a
 Uninstall:
 
 ```powershell
-dsh plugin --profile desktop remove dsh-right-sidebar-toolkit
+dsh plugin --profile desktop remove dsh-image-drag
 ```
 
 ## How it works

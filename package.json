@@ -1,5 +1,5 @@
 {
-  "name": "dsh-right-sidebar-toolkit",
+  "name": "dsh-image-drag",
   "version": "0.1.0",
   "description": "Image Drag: Ctrl+left-drag panning for right-sidebar image/PDF previews; each pane also has its own small close button.",
   "type": "module",

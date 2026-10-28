@@ -1,7 +1,7 @@
 #Requires -Version 5.1
 <#
 .SYNOPSIS
-  Install (or remove) dsh-right-sidebar-toolkit in a DeepSeek Harness profile.
+  Install (or remove) dsh-image-drag in a DeepSeek Harness profile.
 
 .DESCRIPTION
   Links this checkout into <DSH_HOME>/profiles/<Profile> with pnpm (through the
@@ -25,7 +25,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$packageName = 'dsh-right-sidebar-toolkit'
+$packageName = 'dsh-image-drag'
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $dshHome = if ($env:DSH_HOME) { $env:DSH_HOME } else { Join-Path $env:USERPROFILE '.dsh' }
 $profileDir = Join-Path $dshHome (Join-Path 'profiles' $Profile)

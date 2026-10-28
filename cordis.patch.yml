@@ -1,13 +1,13 @@
-# dsh-right-sidebar-toolkit bundle patch
+# dsh-image-drag bundle patch
 #
 # `dsh.bundle.patch` layer: adding this package to `dsh.profile.bundles`
 # makes the profile boot merge this patch, which mounts the loader row for the
 # plugin (host half + `dsh.client` scan).
 #
 # The `disabled` guard backs this row off when another enabled entry already
-# mounts `dsh-right-sidebar-toolkit`, so an accidental double mount cannot
+# mounts `dsh-image-drag`, so an accidental double mount cannot
 # create two competing loader rows.
 - insert:
     - id: right-sidebar-toolkit
-      name: 'dsh-right-sidebar-toolkit'
-      disabled: !!js "[...ctx.loader.entries()].some((e) => e.options.name === 'dsh-right-sidebar-toolkit' && e.options.id !== 'right-sidebar-toolkit' && !e.disabled)"
+      name: 'dsh-image-drag'
+      disabled: !!js "[...ctx.loader.entries()].some((e) => e.options.name === 'dsh-image-drag' && e.options.id !== 'right-sidebar-toolkit' && !e.disabled)"

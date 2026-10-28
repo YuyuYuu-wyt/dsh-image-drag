@@ -64,7 +64,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Profile deskt
 卸载：
 
 ```powershell
-dsh plugin --profile desktop remove dsh-right-sidebar-toolkit
+dsh plugin --profile desktop remove dsh-image-drag
 ```
 
 ## 实现
