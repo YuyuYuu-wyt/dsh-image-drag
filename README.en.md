@@ -39,13 +39,19 @@ Every docked right-sidebar pane gets a close control in its tab strip:
 
 Requires DeepSeek Harness `>= 0.2.0-rc.2` (verified on `0.2.1-rc.2`) with the `dsh` CLI.
 
-### Option A: install from GitHub
+### Option A: install from npm
+
+```powershell
+dsh plugin --profile desktop add dsh-image-drag
+```
+
+### Option B: install from GitHub
 
 ```powershell
 dsh plugin --profile desktop add "github:YuyuYuu-wyt/dsh-image-drag"
 ```
 
-### Option B: clone and link
+### Option C: clone and link
 
 ```powershell
 git clone https://github.com/YuyuYuu-wyt/dsh-image-drag.git

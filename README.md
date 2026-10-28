@@ -39,13 +39,19 @@
 
 要求：DeepSeek Harness `>= 0.2.0-rc.2`（在 `0.2.1-rc.2` 验证），带 `dsh` CLI。
 
-### 方式 A：从 GitHub 安装
+### 方式 A：从 npm 安装
+
+```powershell
+dsh plugin --profile desktop add dsh-image-drag
+```
+
+### 方式 B：从 GitHub 安装
 
 ```powershell
 dsh plugin --profile desktop add "github:YuyuYuu-wyt/dsh-image-drag"
 ```
 
-### 方式 B：克隆后本地 link 安装
+### 方式 C：克隆后本地 link 安装
 
 ```powershell
 git clone https://github.com/YuyuYuu-wyt/dsh-image-drag.git
