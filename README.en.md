@@ -87,6 +87,8 @@ A browser-side-only DSH plugin. No shipped package is modified and there is no h
 
 Independent acceptance (headless browser, real CDP mouse events driving a DSH web instance, with a no-plugin baseline profile): **15/15 criteria PASS**, covering per-pane closing in split mode, image/PDF panning, untouched native zoom, click-right-after-pan and a clean console. In the baseline, native Ctrl+drag pans nothing, confirming the behaviour comes from this plugin.
 
+Built with AI-assisted programming.
+
 ## License
 
 [MIT](LICENSE)

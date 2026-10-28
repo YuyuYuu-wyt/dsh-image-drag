@@ -87,6 +87,8 @@ dsh plugin --profile desktop remove dsh-right-sidebar-toolkit
 
 独立验收（headless 浏览器 + 真实 CDP 鼠标事件驱动 DSH Web 实例，含「不装插件」的 baseline 对照）：**15/15 项 PASS**，覆盖双栏各自关闭、图片/PDF 平移、原生缩放不受影响、拖动后立即点击、无控制台错误；baseline 下原生 Ctrl+拖拽不平移，确认行为由本插件提供。
 
+本项目由 AI 辅助编程完成。
+
 ## License
 
 [MIT](LICENSE)
